@@ -5,7 +5,10 @@ import com.qa.ecommerce.constants.AppConstants;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Properties;
+
 public class LoginPageTest extends BaseTest {
+
 
    @Test(priority = 1)
     public void loginPageNavigationTest(){

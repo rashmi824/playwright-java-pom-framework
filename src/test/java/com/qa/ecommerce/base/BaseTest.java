@@ -1,12 +1,12 @@
 package com.qa.ecommerce.base;
-
+import com.microsoft.playwright.*;
 import com.microsoft.playwright.Page;
 import com.qa.ecommerce.factory.PlaywrightFactory;
 import com.qa.ecommerce.pages.HomePage;
 import com.qa.ecommerce.pages.LoginPage;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 

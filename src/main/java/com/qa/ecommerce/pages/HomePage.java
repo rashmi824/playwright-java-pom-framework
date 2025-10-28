@@ -4,15 +4,15 @@ import com.microsoft.playwright.Page;
 
 public class HomePage {
 
-    private Page page;
+    private final Page page;
 
     //1.String Locators - Object repository
 
-    private String search = "input[name='search']";
-    private String searchIcon = "#search > span > button";
-    private String searchPageHeader = "#content > h1";
-    private String loginLink = "a:text('Login')";
-    private String myAccountLink = "//a[@title='My Account']";
+    private final String search = "input[name='search']";
+    private final String searchIcon = "#search > span > button";
+    private final String searchPageHeader = "#content > h1";
+    private final String loginLink = "a:text('Login')";
+    private final String myAccountLink = "//a[@title='My Account']";
 
 
     //2.Page Constructor

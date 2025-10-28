@@ -4,14 +4,14 @@ import com.microsoft.playwright.Page;
 
 public class LoginPage {
 
-    private Page page;
+    private final Page page;
 
     //1.String Locators - Object Repository
-    private String emailId = "//input[@id='input-email']";
-    private String password = "//input[@id='input-password']";
-    private String loginBtn = "//input[@value='Login']";
-    private String forgotPwdLink = "//div[@class='form-group']//a[normalize-space()='Forgotten Password']";
-    private String logoutLink ="//a[@class='list-group-item'][normalize-space()='Logout']";
+    private final String emailId = "//input[@id='input-email']";
+    private final String password = "//input[@id='input-password']";
+    private final String loginBtn = "//input[@value='Login']";
+    private final String forgotPwdLink = "//div[@class='form-group']//a[normalize-space()='Forgotten Password']";
+    private final String logoutLink ="//a[@class='list-group-item'][normalize-space()='Logout']";
 
     //2.Page Constructor
     public LoginPage(Page page){

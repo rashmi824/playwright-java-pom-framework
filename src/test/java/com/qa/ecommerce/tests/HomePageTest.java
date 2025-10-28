@@ -2,10 +2,12 @@ package com.qa.ecommerce.tests;
 import com.qa.ecommerce.base.BaseTest;
 import com.qa.ecommerce.constants.AppConstants;
 
+import com.qa.ecommerce.pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class HomePageTest extends BaseTest {
+
 
 
     @Test

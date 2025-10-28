@@ -12,10 +12,10 @@ public class PlaywrightFactory {
 
     Properties prop;
 
-    private static ThreadLocal<Browser>tlBrowser = new ThreadLocal<>();
-    private static ThreadLocal<BrowserContext>tlBrowserContext = new ThreadLocal<>();
-    private static ThreadLocal<Page>tlPage = new ThreadLocal<>();
-    private static ThreadLocal<Playwright>tlPlaywright = new ThreadLocal<>();
+    private static final ThreadLocal<Browser>tlBrowser = new ThreadLocal<>();
+    private static final ThreadLocal<BrowserContext>tlBrowserContext = new ThreadLocal<>();
+    private static final ThreadLocal<Page>tlPage = new ThreadLocal<>();
+    private static final ThreadLocal<Playwright>tlPlaywright = new ThreadLocal<>();
 
 
     public static Playwright getPlaywright(){
