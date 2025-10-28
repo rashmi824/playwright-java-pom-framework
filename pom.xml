@@ -94,7 +94,7 @@
                 <configuration>
                     <!-- Automatically run this suite when you do mvn test -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
                     <!-- Prevents older Java reflection issues -->
