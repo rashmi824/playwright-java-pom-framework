@@ -32,7 +32,7 @@ Thread-safe browser context creation.
 Configuration loading from config.properties.  
 Common utilities for test lifecycle management.  
 
-###🔹 Factory Layer (PlaywrightFactory) 
+### 🔹 Factory Layer (PlaywrightFactory) 
 
 Centralized browser and context management layer.  
 Supports:  
@@ -41,7 +41,7 @@ Firefox
 WebKit  
 Dynamically initialized using property-driven configurations.  
 
-###🔹 Configuration Management  
+### 🔹 Configuration Management  
 
 Framework is fully config-driven.  
 Environment variables (URL, browser type, headless mode, etc.) loaded from:  
@@ -58,7 +58,7 @@ Maven Surefire plugin configuration in pom.xml.
 
 ## 📊 Reporting & Analytics 
 
-3## 🔸 Extent Reports
+### 🔸 Extent Reports
 
 Generates visually rich HTML reports with categorized test outcomes.  
 Integrated listener: ExtentReportListener.java  
