@@ -3,7 +3,7 @@
 ![Extent Report](https://img.shields.io/badge/report-extent-orange)
 ![Playwright](https://img.shields.io/badge/automation-playwright-success)
 
-#Playwright Java Automation Framework    
+# Playwright Java Automation Framework    
 
 An enterprise-grade automation framework built using Playwright for Java, designed with a strong architectural backbone for scalability, parallel execution, and continuous test integration via Jenkins Maven jobs.  
 
