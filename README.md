@@ -12,19 +12,19 @@ This project demonstrates deep automation engineering concepts — including Pag
 
 ## 🧱 Framework Architecture & Design    
 
-🔹 Page Object Model (POM)  
+### 🔹 Page Object Model (POM)  
 
 Each application page is represented as a dedicated class containing locators and actions.  
 Enables high modularity, maintainability, and code reusability.  
 Page Chaining is implemented — page actions return the next page object for smooth flow (e.g., loginPage.doLogin().navigateToHome()).    
 
-🔹 ThreadLocal Implementation  
+### 🔹 ThreadLocal Implementation  
 
 Every thread maintains its own Playwright driver instance, avoiding conflicts during parallel runs.  
 Isolates test data and browser sessions at thread-level.  
 Enables true parallel execution across multiple browsers and test suites.  
 
-🔹 BaseTest Abstraction  
+### 🔹 BaseTest Abstraction  
 
 Encapsulates:  
 Playwright setup & teardown.  
@@ -32,7 +32,7 @@ Thread-safe browser context creation.
 Configuration loading from config.properties.  
 Common utilities for test lifecycle management.  
 
-🔹 Factory Layer (PlaywrightFactory) 
+###🔹 Factory Layer (PlaywrightFactory) 
 
 Centralized browser and context management layer.  
 Supports:  
@@ -41,7 +41,7 @@ Firefox
 WebKit  
 Dynamically initialized using property-driven configurations.  
 
-🔹 Configuration Management  
+###🔹 Configuration Management  
 
 Framework is fully config-driven.  
 Environment variables (URL, browser type, headless mode, etc.) loaded from:  
@@ -56,8 +56,10 @@ Maximum parallelism achieved through:
 TestNG parallel attributes (parallel="tests" thread-count="4")  
 Maven Surefire plugin configuration in pom.xml.  
 
-## 📊 Reporting & Analytics  
-🔸 Extent Reports  
+## 📊 Reporting & Analytics 
+
+3## 🔸 Extent Reports
+
 Generates visually rich HTML reports with categorized test outcomes.  
 Integrated listener: ExtentReportListener.java  
 Features:  
@@ -68,13 +70,14 @@ Embedded media for traceability.
 Output:  
 /build/TestExecutionReport.html  
 
-🔸 TestNG Default Reports  
+### 🔸 TestNG Default Reports 
+
 Secondary reporting layer for suite-level visibility:  
 /test-output/index.html  
 
-🧩 Jenkins Integration (Maven Job Execution)
+## 🧩 Jenkins Integration (Maven Job Execution)
 
-🔸 Jenkins Job Setup  
+### 🔸 Jenkins Job Setup  
 
 Configured as a Maven project (not a full CI/CD pipeline).  
 Navigate to Jenkins Dashboard → New Item → Maven Project.  
@@ -83,7 +86,7 @@ Under Build → Goals and Options, specify:
 clean test -DsuiteXmlFile=src/test/resources/testrunners/testng_regression.xml  
 Save and trigger build manually or via SCM polling.  
 
-🔸 Build & Post-Build Steps  
+### 🔸 Build & Post-Build Steps  
 
 On each Jenkins job execution:  
 
@@ -96,7 +99,7 @@ Report	Location
 Extent HTML Report	build/TestExecutionReport.html  
 TestNG HTML Report	test-output/index.html 
 
-🔸 Jenkins Optimization  
+### 🔸 Jenkins Optimization  
 
 Leverages Maven Surefire plugin for test orchestration.  
 Thread-safe driver management using ThreadLocal ensures flawless parallel execution in Jenkins environments.  
@@ -115,10 +118,10 @@ HTML Publisher Plugin (optional) can be configured to publish reports under Jenk
 
 ## 🧪 How to Execute Tests  
 
-▶️ Run Locally (via Maven)  
+### Run Locally (via Maven)  
 mvn clean test -DsuiteXmlFile=src/test/resources/testrunners/testng_regression.xml  
 
-⚙️ Run via Jenkins (Maven Job)  
+### Run via Jenkins (Maven Job)  
 clean test -DsuiteXmlFile=src/test/resources/testrunners/testng_regression.xml  
 
 ## 🏗️ Future Enhancements (Planned)  
