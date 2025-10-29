@@ -1,7 +1,11 @@
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![TestNG](https://img.shields.io/badge/testng-7.9-blue)
-![Extent Report](https://img.shields.io/badge/report-extent-orange)
-![Playwright](https://img.shields.io/badge/automation-playwright-success)
+![Build](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)
+![Java](https://img.shields.io/badge/java-17-red?style=for-the-badge&logo=openjdk&logoColor=white)
+![TestNG](https://img.shields.io/badge/TestNG-7.11-orange?style=for-the-badge)
+![Playwright](https://img.shields.io/badge/Playwright-Java-blueviolet?style=for-the-badge&logo=playwright&logoColor=white)
+![Extent Report](https://img.shields.io/badge/Report-Extent%20Reports-orange?style=for-the-badge)
+![Parallel Execution](https://img.shields.io/badge/Parallel-ThreadLocal%20Enabled-yellow?style=for-the-badge)
+![Design Pattern](https://img.shields.io/badge/Design-POM%20+%20Page%20Chaining-success?style=for-the-badge)
+
 
 # Playwright Java Automation Framework    
 
