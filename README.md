@@ -10,7 +10,7 @@ An enterprise-grade automation framework built using Playwright for Java, design
 This project demonstrates deep automation engineering concepts — including Page Object Model (POM), Page Chaining, ThreadLocal driver management, configuration-driven execution, and rich HTML reporting   (Extent Reports).    
 
 
-🧱 Framework Architecture & Design    
+## 🧱 Framework Architecture & Design    
 
 🔹 Page Object Model (POM)  
 
@@ -47,7 +47,7 @@ Framework is fully config-driven.
 Environment variables (URL, browser type, headless mode, etc.) loaded from:  
 src/test/resources/config/config.properties  
 
-⚙️ Parallel Execution Strategy  
+## ⚙️ Parallel Execution Strategy  
 
 Managed via TestNG XML suites:  
 src/test/resources/testrunners/testng_regression.xml  
@@ -56,7 +56,7 @@ Maximum parallelism achieved through:
 TestNG parallel attributes (parallel="tests" thread-count="4")  
 Maven Surefire plugin configuration in pom.xml.  
 
-📊 Reporting & Analytics  
+## 📊 Reporting & Analytics  
 🔸 Extent Reports  
 Generates visually rich HTML reports with categorized test outcomes.  
 Integrated listener: ExtentReportListener.java  
@@ -102,7 +102,7 @@ Leverages Maven Surefire plugin for test orchestration.
 Thread-safe driver management using ThreadLocal ensures flawless parallel execution in Jenkins environments.  
 HTML Publisher Plugin (optional) can be configured to publish reports under Jenkins UI.  
 
-🧠 Key Concepts Demonstrated  
+## 🧠 Key Concepts Demonstrated  
 
 ✅ Page Object Model (POM)  
 ✅ Page Chaining Implementation  
@@ -113,7 +113,7 @@ HTML Publisher Plugin (optional) can be configured to publish reports under Jenk
 ✅ Jenkins Maven Job Integration  
 ✅ BaseTest Abstraction for Reusability    
 
-🧪 How to Execute Tests  
+## 🧪 How to Execute Tests  
 
 ▶️ Run Locally (via Maven)  
 mvn clean test -DsuiteXmlFile=src/test/resources/testrunners/testng_regression.xml  
@@ -121,7 +121,7 @@ mvn clean test -DsuiteXmlFile=src/test/resources/testrunners/testng_regression.x
 ⚙️ Run via Jenkins (Maven Job)  
 clean test -DsuiteXmlFile=src/test/resources/testrunners/testng_regression.xml  
 
-🏗️ Future Enhancements (Planned)  
+## 🏗️ Future Enhancements (Planned)  
 
 CI/CD pipeline integration (GitHub Actions)  
 Allure Report integration  
