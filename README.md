@@ -3,11 +3,11 @@
 ![Extent Report](https://img.shields.io/badge/report-extent-orange)
 ![Playwright](https://img.shields.io/badge/automation-playwright-success)
 
-🧩 Playwright Java Automation Framework
+🧩 Playwright Java Automation Framework    
 
-An enterprise-grade automation framework built using Playwright for Java, designed with a strong architectural backbone for scalability, parallel execution, and continuous test integration via Jenkins Maven jobs.
+An enterprise-grade automation framework built using Playwright for Java, designed with a strong architectural backbone for scalability, parallel execution, and continuous test integration via Jenkins Maven jobs.  
 
-🚀 This project demonstrates deep automation engineering concepts — including Page Object Model (POM), Page Chaining, ThreadLocal driver management, configuration-driven execution, and rich HTML reporting (Extent Reports).
+🚀 This project demonstrates deep automation engineering concepts — including Page Object Model (POM), Page Chaining, ThreadLocal driver management, configuration-driven execution, and rich HTML reporting   (Extent Reports).    
 
 ⚙️ Tech Stack
 Category	Technology
