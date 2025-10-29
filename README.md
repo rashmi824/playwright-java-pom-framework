@@ -9,23 +9,24 @@ An enterprise-grade automation framework built using Playwright for Java, design
 
 🚀 This project demonstrates deep automation engineering concepts — including Page Object Model (POM), Page Chaining, ThreadLocal driver management, configuration-driven execution, and rich HTML reporting   (Extent Reports).    
 
-⚙️ Tech Stack
-Category	Technology
-Language	Java
-Automation Tool	Playwright for Java
-Test Framework	TestNG
-Build Tool	Maven
-Reporting	Extent Reports + TestNG Reports
-Execution	Parallel (via TestNG + ThreadLocal)
-Integration	Jenkins (Maven Job Trigger)
-🧱 Framework Architecture & Design
+⚙️ Tech Stack  
+Category	                      Technology  
+Language	                      Java  
+Automation Tool	                Playwright for Java  
+Test Framework  	              TestNG
+Build Tool	                    Maven
+Reporting	                      Extent Reports + TestNG Reports
+Execution	                      Parallel (via TestNG + ThreadLocal)
+Integration	                    Jenkins (Maven Job Trigger)  
+
+
+🧱 Framework Architecture & Design  
+
 🔹 Page Object Model (POM)
 
 Each application page is represented as a dedicated class containing locators and actions.
-
 Enables high modularity, maintainability, and code reusability.
-
-Page Chaining is implemented — page actions return the next page object for smooth flow (e.g., loginPage.doLogin().navigateToHome()).
+Page Chaining is implemented — page actions return the next page object for smooth flow (e.g., loginPage.doLogin().navigateToHome()).  
 
 🔹 ThreadLocal Implementation
 
